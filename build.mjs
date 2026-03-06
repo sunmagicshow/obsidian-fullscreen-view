@@ -7,7 +7,7 @@ import { readFileSync, writeFileSync } from 'fs';
 await build({
   entryPoints: ['src/main.ts'],
   bundle: true,
-  outfile: 'main.js',
+  outfile: 'dist/main.js',
   platform: 'node',
   target: 'node16',
   external: ['fs', 'path', 'electron', 'obsidian'],
@@ -17,3 +17,14 @@ await build({
   treeShaking: true,
   legalComments: 'none',
 });
+
+// 复制文件
+try {
+    const Content_styles = readFileSync('src/styles.css', 'utf8');
+    const Content_manifest = readFileSync('manifest.json', 'utf8');
+    writeFileSync('dist/styles.css', Content_styles);
+    writeFileSync('dist/manifest.json', Content_manifest);
+    console.log('✅ 文件复制成功');
+} catch {
+    console.log('❌ 文件复制失败:');
+}
