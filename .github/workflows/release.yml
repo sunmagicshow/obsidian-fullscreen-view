@@ -34,5 +34,4 @@ jobs:
 
                     gh release create "$tag" \
                       --title="$tag" \
-                      --generate-notes \
                       main.js manifest.json styles.css
