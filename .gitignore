@@ -72,3 +72,5 @@ Thumbs.db
 # ==================== #
 manifest.json.bak
 versions.json
+main.js
+styles.css
