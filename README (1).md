@@ -18,7 +18,7 @@ A powerful WebDAV plugin for Obsidian that enables seamless file management thro
 ### 📋 Requirements
 
 #### 🔌 Media Extended Plugin
-For video playback functionality, please install the [Media Extended plugin](obsidian://show-plugin?id=media-extended). This enables smooth video preview within Obsidian.
+For video playback functionality, please install the [Media Extended plugin](https://github.com/aidenlx/media-extended). This enables smooth video preview within Obsidian.
 
 #### 🌐 CORS Configuration
 ⚠️ **Important**: Your WebDAV server must support CORS (Cross-Origin Resource Sharing) for real-time file preview. Without proper CORS configuration, you may encounter preview errors. Ensure your server includes the following headers:
